@@ -1,0 +1,96 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+#main {
+    width: 70%;
+    background-color: #fff;
+    margin: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+
+section {
+    width: 65%;
+    background-color: #fff;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #00000025;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section p {
+    text-align: justify;
+}
+
+section div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin: 10px 0;
+}
+
+section div label {
+    width: 40%;
+}
+
+section div input {
+    width: 40%;
+}
+
+section div input[type="number"] {
+    width: 20%;
+}
+
+section div input[readonly] {
+    outline: none;
+}
+
+section button {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+}
+
+section div .result {
+    font-weight: bold;
+}
+
+#main,
+section {
+    box-sizing: border-box;
+}
+
+.go {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#main h1 {
+    margin-left: 20px;
+}
+
+#main p {
+    margin-left: 20px;
+}
